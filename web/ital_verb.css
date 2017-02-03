@@ -18,3 +18,13 @@
 .lose {
 	color: red;
 }
+body{
+	background-image: url("florence.jpg");
+	background-size: cover;
+    	background-position: center; 
+}
+
+.jumbotron{
+  background-color: rgba(88,88,88,0.9);
+  color: white;
+}
