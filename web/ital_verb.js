@@ -9,6 +9,7 @@ var cur_pronoun = "io";
 var SUCCESS = 0;
 var ATTEMPTS = 0;
 $(document).ready(function(){
+	newWord();
 	$("#submit").click(function(){
 		evaluate();
 		newWord();
