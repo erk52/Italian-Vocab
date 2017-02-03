@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Verb Conjugator</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="ital_verb.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="verbs2.js"></script>
+<script src="ital_verb.js"></script>
+
+</head>
+
+<body>
+
+<div class="container" id="main_cont">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-6" id="question">
+		<h3 id="response"></h3>
+        <h3 id="infinitive">mangiare: <em id='def'>to eat</em></h3>
+        <h3 id="tense">Present Indicative, <span id="pronoun">Io</span> </h3>
+        <input type="text" class="form-control" id="guess" placeholder=""><button type="button" class="btn btn-default" id="submit">Submit</button>
+      </div>
+      <div class="col-sm-3" id="options">
+        <div class="checkbox">
+		  <label><input type="checkbox" value="1" id="c1" checked>Present Indicative</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c2">Present Perfect</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c3">Imperfect</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c4">Preterite</label>
+		</div>
+
+      </div>
+	  <div class="col-sm-3" id="options">
+        <div class="checkbox">
+		  <label><input type="checkbox" value="" id="c5">Present Subjunctive</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id='c6'>Future</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c7">Imperfect Subjunctive</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c8">Conditional</label>
+		</div>
+      </div>
+	  
+	  
+    </div>
+    <hr>
+    <div id="score">Current Score 0/0</div>
+  </div>  
+</div>
+
+
+</body>

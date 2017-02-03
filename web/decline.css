@@ -1,0 +1,12 @@
+#main_cont {
+  padding-top: 5%;
+  width: 70%;
+}
+
+#question, #options{
+  text-align: center;
+}
+
+#option_buttons{
+  padding-top: 1%;
+}
