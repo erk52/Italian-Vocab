@@ -1,6 +1,6 @@
 <html>
 <head>
-<title></title>
+<title>Declens-o-matic</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="decline.css">
@@ -16,28 +16,116 @@
 
 <body>
 
+<!---NAVBAR -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#" class="navbar-brand">Language Tools</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Italian <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="ital_verb.html">Conjugation Drills</a></li>
+						<li><a href="#">Conjugation Notes</a></li>
+						<li><a href="#">Object Pronouns</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					  </ul>
+					</li>
+					
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Latin <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="decline.html">Declension Drills</a></li>
+						<li><a href="#">Declension Notes</a></li>
+						<li><a href="#">Conjugation Drills</a></li>
+						<li><a href="#">Conjugation Notes</a></li>
+					  </ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!---NAVBAR ENDS -->
+
+
+
 <div class="container" id="main_cont">
   <div class="jumbotron">
     <div class="row">
       <div class="col-sm-6" id="question">
-        <h3 id="define">amicus, -i m: <em>friend</em></h3>
-        <h3>Ablative Plural</h3>
-        <input type="text" class="form-control" id="guess" placeholder=""><button type="button" class="btn btn-default">Submit</button>
+		<h3 id="response"></h3>
+        <h3 id="word">amicus, -i m.: <em id='def'>friend</em></h3>
+        <h3 id="case">Nominative Singular</h3>
+        <input type="text" class="form-control" id="guess" placeholder=""><button type="button" class="btn btn-default" id="submit">Submit</button>
       </div>
-      <div class="col-sm-6" id="options">
-        <div class="btn-group-vertical" role="group" id="option_buttons">
-          <button type="button" class="btn btn-default active option" id="first_declens">First Declension</button>
-          <button type="button" class="btn btn-default active option" id="second_declens">Second Declension</button>
-          <button type="button" class="btn btn-default active option" id="third_declens">Third Declension</button>
-          <button type="button" class="btn btn-default active option" id="fourth_declens">Fourth Declension</button>
-          <button type="button" class="btn btn-default active option" id="fifth_declens">Fifth Declension</button>
-        </div>
+      <div class="col-sm-3" id="options">
+		Singular
+        <div class="checkbox">
+		  <label><input type="checkbox" value="1" id="c1" checked>Nom</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c2" checked>Gen</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c3" checked>Acc</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c4" checked>Dat</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c5" checked>Abl</label>
+		</div>
+
       </div>
+	  <div class="col-sm-3" id="options">
+        	Plural
+        <div class="checkbox">
+		  <label><input type="checkbox" value="1" id="c6" checked>Nom</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c7" checked>Gen</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c8" checked>Acc</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c9" checked>Dat</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c10" checked>Abl</label>
+		</div>
+      </div>
+	  <br>
+	  <div id="select_declens">
+	  
+		<button type="button" class="btn btn-success" id="dec_1">First</button>
+		<button type="button" class="btn btn-success" id="dec_2">Second</button>
+		<button type="button" class="btn btn-success" id="dec_3">Third</button>
+		<button type="button" class="btn btn-danger" id="dec_4">Fourth</button>
+		<button type="button" class="btn btn-danger" id="dec_5">Fifth</button>
+	  </div>
+	  
+	  
     </div>
     <hr>
     <div id="score">Current Score 0/0</div>
   </div>  
 </div>
-
 
 </body>
