@@ -1,6 +1,7 @@
 #main_cont {
   padding-top: 5%;
   width: 70%;
+
 }
 
 #question, #options{
@@ -9,4 +10,22 @@
 
 #option_buttons{
   padding-top: 1%;
+}
+
+.win {
+	color: rgb(8, 222, 0);
+}
+
+.lose {
+	color: red;
+}
+
+.jumbotron{
+  background-color: rgba(88,88,88,0.9);
+  color: white;
+}
+
+#select_declens{
+text-align: center;
+padding-top: 100px;
 }
