@@ -1,0 +1,31 @@
+#main_cont {
+  padding-top: 5%;
+  width: 70%;
+}
+
+#question, #options{
+  text-align: center;
+}
+
+#option_buttons{
+  padding-top: 1%;
+}
+
+.win {
+	color: rgb(8, 222, 0);
+}
+
+.lose {
+	color: red;
+}
+/*
+body{
+	background-image: url("florence.jpg");
+	background-size: cover;
+    	background-position: center; 
+}
+*/
+.jumbotron{
+  background-color: rgba(88,88,88,0.9);
+  color: white;
+}

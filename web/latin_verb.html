@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Practice Latin Verbs</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="latin_verb.css">
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="latin_verb_list.js"></script>
+<script src="latin_verb_conjugator.js"></script>
+
+</head>
+
+<body>
+<!---NAVBAR -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+				<a href="#" class="navbar-brand">Language Tools</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-nav-demo">
+				<ul class="nav navbar-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Italian <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="ital_verb.html">Conjugation Drills</a></li>
+						<li><a href="ital_conj_notes.html">Conjugation Notes</a></li>
+						<li><a href="#">Object Pronouns</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+					  </ul>
+					</li>
+					
+					<li class="dropdown">
+					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Latin <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li><a href="decline.html">Declension Drills</a></li>
+						<li><a href="#">Declension Notes</a></li>
+						<li><a href="#">Conjugation Drills</a></li>
+						<li><a href="#">Conjugation Notes</a></li>
+					  </ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!---NAVBAR ENDS -->
+
+
+
+<div class="container" id="main_cont">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-6" id="question">
+		<h3 id="response"></h3>
+        <h3><span id="infinitive">mangiare</span>: <em><span id='def'>to eat</span></em></h3>
+        <h3 id="tense">Present Indicative Active, <span id="pronoun">First Person Singular</span> </h3>
+        <input type="text" class="form-control" id="guess" placeholder=""><button type="button" class="btn btn-default" id="submit">Submit</button>
+      </div>
+      <div class="col-sm-3" id="options"><h4>ACTIVE</h4>
+        <div class="checkbox">
+		  <label><input type="checkbox" value="1" id="c1" checked>Present Indicative</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c2">Imperfect Indicative</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c3">Future Indicative</label>
+		</div>
+
+      </div>
+	  <div class="col-sm-3" id="options"><h4>PASSIVE</h4>
+        <div class="checkbox">
+		  <label><input type="checkbox" value="" id="c4">Present Indicative</label>
+		</div><!--
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id='c6'>Some other passive tense</label>
+		</div>
+		<div class="checkbox">
+		  <label><input type="checkbox" value="" id="c7">Another tense</label>
+		</div> -->
+      </div>
+	  
+	  
+    </div>
+    <hr>
+    <div id="score">Current Score 0/0</div>
+  </div>  
+</div>
+
+
+</body>
